@@ -1,0 +1,38 @@
+/* Ajoutez ces styles pour aligner l'image et le texte sur la même ligne */
+.about-content {
+    display: flex;
+    align-items: center;
+  }
+  
+  .about-image {
+    max-width: 200px; /* Ajustez la taille de l'image selon vos besoins */
+    margin-right: 20px; /* Espace entre l'image et le texte */
+    border: 1px  ; /* Bordure de 2px solide de couleur grise (#ccc) */
+    border-radius: 50%;
+  }
+  
+  /* Les styles existants restent inchangés */
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  h2.section-title {
+    text-align: center;
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555;
+  }
+  
+  .about-us {
+    background-color: #f9f9f9;
+    padding: 40px 0;
+  }
+  

@@ -1,0 +1,287 @@
+/* Ajoutez ces styles pour aligner l'image et le texte sur la même ligne */
+.about-content {
+    display: flex;
+    align-items: center;
+  }
+  
+  .about-image {
+    max-width: 100px; /* Ajustez la taille de l'image selon vos besoins */
+    margin-right: 20px; /* Espace entre l'image et le texte */
+    border: 2px solid #ccc; /* Bordure de 2px solide de couleur grise (#ccc) */
+    border-radius: 50%;
+  }
+  
+  /* Les styles existants restent inchangés */
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  h2.section-title {
+    text-align: center;
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555;
+  }
+  
+  .about-us {
+    background-color: #f9f9f9;
+    padding: 40px 0;
+  }
+  
+  .user-form .form-box {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    background-color: white;
+    transition: 500ms ease-in-out;
+  }
+  
+  
+  .user-form .img-box img {
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+   
+    width: 50%;
+    height: 100%;
+    transition: all 500ms ease-in-out;
+    width: 50%;
+    
+  }
+  
+  /* Placez le formulaire à gauche de l'image */
+  .user-form .user.login {
+    display: flex;
+    flex-direction: row-reverse; /* Inverser l'ordre d'affichage */
+  }
+  
+  
+  
+  
+  
+  
+  .user-form .form-box .top {
+    position: absolute;
+    top: 14px;
+    right: 14px;
+  }
+  
+  .user-form .form-box .top p {
+    font-size: 13px;
+  }
+  
+  .user-form .form-box .top span {
+    color: #1a1aff;
+    cursor: pointer;
+  }
+  
+  .user-form form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    max-width: 300px;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .user-form form .form-control:first-child {
+    text-align: center;
+  }
+  
+  .user-form form .form-control:first-child input {
+    font-family: "Roboto", sans-serif;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    padding: 10px 0;
+    margin-bottom: 10px;
+    text-indent: 16px;
+    width: 100%;
+    color: #4d4d4d;
+    outline: none;
+  }
+  
+  .user-form form .form-control:first-child input[type="submit"] {
+    display: block;
+    text-align: center;
+    width: 100%;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: #1a1aff;
+    color: white;
+    transition: 0.5s;
+  }
+  
+  .user-form form .form-control:first-child input[type="submit"]:hover {
+    background-color: #ccccff;
+  }
+  
+  .user-form form .form-control:first-child h2 {
+    width: 100%;
+    font-weight: 400;
+    font-size: 26px;
+  }
+  
+  .user-form form .form-control:first-child p {
+    font-size: 15px;
+    margin-bottom: 20px;
+  }
+  
+  .user-form form .form-control:first-child span {
+    font-size: 13px;
+    display: block;
+    text-align: right;
+    margin-bottom: 20px;
+  }
+  
+  .user-form form .form-control:first-child div {
+    position: relative;
+  }
+  
+  .user-form form .form-control:first-child .icon {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 1rem;
+    cursor: pointer;
+  }
+  
+  .user-form form .form-control:last-child {
+    text-align: center;
+  }
+  
+  .user-form form .form-control:last-child p {
+    position: relative;
+    display: inline-block;
+    font-size: 14px;
+  }
+  
+  .user-form form .form-control:last-child p::after {
+    content: "";
+    position: absolute;
+    right: -50px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 2px;
+    background-color: #ddd;
+  }
+  
+  .user-form form .form-control:last-child p::before {
+    content: "";
+    position: absolute;
+    left: -50px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 2px;
+    background-color: #ddd;
+  }
+  
+  .user-form form .form-control:last-child .icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .user-form form .form-control:last-child .icons .icon {
+    cursor: pointer;
+  }
+  
+  .user-form form .form-control:last-child .icons .icon:not(:last-child) {
+    margin-right: 15px;
+  }
+  
+  .user-form .container .signup {
+    pointer-events: none;
+  }
+  
+  .user-form .container .signup .form-box {
+    top: 100%;
+  }
+  
+  .user-form .container .signup .img-box {
+    top: -100%;
+  }
+  
+  .user-form .container.active .signup {
+    pointer-events: initial;
+  }
+  
+  .user-form .container.active .signup .form-box {
+    top: 0;
+  }
+  
+  .user-form .container.active .signup .img-box {
+    top: 0;
+  }
+  
+  .user-form .container .login .form-box {
+    top: 0;
+  }
+  
+  .user-form .container .login .img-box {
+    top: 0;
+  }
+  
+  .user-form .container.active .login .form-box {
+    top: 100%;
+  }
+  
+  .user-form .container.active .login .img-box {
+    top: -100%;
+  }
+  
+  .user-form .container {
+    position: relative;
+    width: 900px;
+    height: 500px;
+    background-color: white;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+  }
+  
+  @media (max-width: 996px) {
+    .user-form .container {
+      max-width: 400px;
+    }
+    .user-form .container .img-box {
+      display: none;
+    }
+    .user-form .container .form-box {
+      width: 100%;
+    }
+    .user-form .container.active .login .form-box {
+      top: -100%;
+    }
+  }
+  @media (max-width: 567px) {
+    .header .navbar .row .nav-list a.user-link {
+      display: block;
+    }
+  
+    .user-form {
+      padding: 0;
+    }
+    .user-form .close-form {
+      top: 10px;
+      right: 10px;
+      padding: 0.7rem;
+      font-size: 2.3rem;
+    }
+  }
+  
